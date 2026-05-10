@@ -1,0 +1,28 @@
+body{
+  margin:0;font-family:Georgia,serif;color:white;overflow-x:hidden;
+  background:linear-gradient(180deg,#f6a6d6,#b89cff,#ffcb8a);
+  min-height:100vh;
+}
+.sky,.glow{position:fixed;inset:0;pointer-events:none}
+.glow{background:radial-gradient(circle at center,rgba(255,255,255,.25),transparent 60%)}
+#scene{padding:40px;display:flex;flex-direction:column;align-items:center;gap:30px}
+.card{
+  background:rgba(255,255,255,.18);backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.35);border-radius:24px;
+  padding:24px;box-shadow:0 10px 40px rgba(0,0,0,.12);max-width:900px;
+}
+.hero{text-align:center;margin-top:10vh}
+button{
+  border:none;padding:14px 24px;border-radius:999px;font-size:1rem;
+  background:white;color:#9a4fa7;cursor:pointer;font-weight:bold;
+}
+.hidden{display:none}
+.garden{display:grid;gap:24px;width:min(100%,1000px)}
+.flower{cursor:pointer;text-align:center;font-size:1.2rem}
+.gallery .photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+.gallery img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:20px}
+.modal{
+ position:fixed;inset:0;background:rgba(0,0,0,.45);
+ display:flex;align-items:center;justify-content:center;padding:20px;
+}
+#modalText{max-width:700px;font-size:1.2rem;line-height:1.6}
